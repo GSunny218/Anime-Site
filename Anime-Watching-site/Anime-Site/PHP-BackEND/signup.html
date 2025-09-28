@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Anime Leveling.com - Sign Up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-color: rgb(27, 27, 27);
+        }
+
+        .div-form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .inner-form {
+            border: 1px dashed aqua;
+            border-radius: 20px;
+            height: 370px;
+            width: 400px;
+            text-align: center;
+            margin: 140px;
+        }
+
+        label {
+            color: rgb(102, 212, 248);
+        }
+
+        input {
+            background-color: rgb(27, 27, 27);
+            border: 1px solid rgb(141, 143, 142);
+            color:rgb(181, 255, 233);
+        }
+
+        .align-form {
+            margin: 20px;
+        }
+
+        .submit-button {
+            background-color: rgb(143, 195, 212);
+            color: rgb(43, 43, 43);
+            border: none;
+            height: 40px;
+            width: 65px;
+            font-weight: 700;
+            border-radius: 30px;
+            padding: 5px;
+            margin: 20px 0 0 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: aliceblue;
+            text-decoration: underline;
+        }
+
+        .signup-text {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            color: rgb(253, 42, 112);
+        }
+
+        .submit-button:hover {
+            color: aqua;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        p {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-form">
+        <div class="inner-form">
+            <P class="signup-text">Sign Up</P>
+            <div class="align-form">
+                <form method="POST" action="signup.php">
+                    <label for="usern">Enter Username: </label>
+                    <input type="text" name="username" id="usern" required>
+                    <br><br>
+                    <label for="usermail">Enter Your Email: </label>
+                    <input type="email" name="uemail" id="usermail" required>
+                    <br><br>
+                    <label for="">Enter Your Password: </label>
+                    <input type="password" name="pass" id="upass" required>
+                    <br><br>
+                    <button type="submit" class="submit-button" >Sign Up</button>
+                </form>
+                <hr>
+                <div class="signin-div">
+                    <p>Already have an account?</p>
+                    <p>Click Here To Sign In</p>
+                    <a class="signup-text" href="login.html"><strong>Sign In</strong></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

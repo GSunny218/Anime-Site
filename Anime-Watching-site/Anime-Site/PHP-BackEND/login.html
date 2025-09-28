@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Anime Leveling.com</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-color: rgb(27, 27, 27);
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .side1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            height: 700px;
+        }
+
+        .side2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            height: 700px;
+        }
+
+        .div-image {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .nameplate {
+            font-family: Arial;
+            color: lightblue;
+            text-align: center;
+            margin-bottom: 200px;
+            font-weight: 900;
+            font-size: larger;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+
+        .div-form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 350px;
+            flex: 1;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .inner-form {
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.39);
+            height: 420px;
+            width: 400px;
+            border-radius: 10px;
+            border: 1px dashed rgb(117, 117, 117);
+        }
+        
+        label {
+            color: rgb(102, 212, 248);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 10px 5px 10px;
+        }
+
+        input {
+            background-color: rgb(27, 27, 27);
+            border: 1px solid rgb(141, 143, 142);
+            color:rgb(181, 255, 233);
+        }
+
+        .submit-button {
+            background-color: lightblue;
+            color: rgb(43, 43, 43);
+            border: none;
+            height: 40px;
+            width: 65px;
+            font-weight: 700;
+            border-radius: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(43, 43, 43);
+        }
+
+        .submit-button:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .submit-button:active {
+            transition: white 2s;
+            opacity:  white 1s;
+        }
+
+        form {
+            margin-top: 80px;
+        }
+
+        .sign-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        .signup-text {
+            text-decoration: none;
+            color: rgb(236, 39, 72);
+        }
+
+        .signup-text:hover{
+            cursor: pointer;
+            color: aliceblue;
+            text-decoration: underline;
+        }
+
+        
+        p {
+            color: rgb(255, 248, 252);
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="side1">
+        <div class="div-image">
+            <img src="jin woo.PNG">
+        </div>
+        <div class="nameplate">Anime Leveling.com</div>
+    </div>
+    <div class="side2">
+        <div class="div-form">
+            <div class="inner-form">
+                <p><strong>Welcome To Anime Leveling.com</strong></p>
+                <p>We launch All New and Your Favourite Hindi Dubbed Animes</p>
+                <p>Please Sign In Before Your Start</p>
+                <form method="post" action="login.php" id="anime-form">
+                    <label class="labelemail" for="usermail">Enter Your Email: </label>
+                    <input type="email" name="uemail" id="usermail" required>
+                    <br><br>
+                    <label class="pass-word" for="upass">Enter Your Password</label>
+                    <input type="password" name="pass" id="upass" required>
+                    <br><br>
+                    <button class="submit-button" type="submit">Sign In</button>
+                    <br><br><hr>
+                </form>
+                <div class="signin-div"><p>New On This site?</p>
+                    <a class="signup-text" href="signup.html"><strong>Sign Up</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
